@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Menu with Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu, .cart {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            vertical-align: top;
+            width: 45%;
+        }
+        .menu-item {
+            margin-bottom: 10px;
+        }
+        .menu-item button {
+            margin-left: 10px;
+        }
+        .cart-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Restaurant Menu</h1>
+<div class="menu">
+    <h2>Menu</h2>
+    <div id="menuItems"></div>
+</div>
+<div class="cart">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <p>Total: Rs<span id="cartTotal">0</span></p>
+    <h3>Billing</h3>
+    <label for="mobile">Mobile Number:</label>
+    <input type="text" id="mobile" placeholder="Enter mobile number">
+    <br><br>
+    <button onclick="checkout()">Checkout</button>
+</div>
+<script src="cart.js"></script>
+</body>
+</html>
